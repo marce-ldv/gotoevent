@@ -4,7 +4,7 @@ namespace config;
 
 
 define("DB_NAME", "dbusers");
-define("DB_USER", "root2");
+define("DB_USER", "root");
 define("DB_PASS", "");
 define("DB_HOST", "localhost");
 

@@ -118,7 +118,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="<?= URL_IMG ?>img1.png" alt="" class="img-fluid mb-3 rouded-circle">
+        <img src="<?= URL_IMG ?>/img1.png" alt="" class="img-fluid mb-3 rouded-circle">
       </div>
       <div class="col-md-6">
         <h3>SERVICES AND PRODUCTS</h3>
@@ -215,7 +215,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="<?= URL_IMG ?>img2.png" alt="" class="img-fluid mb-3 rouded-circle">
+        <img src="<?= URL_IMG ?>/img2.png" alt="" class="img-fluid mb-3 rouded-circle">
       </div>
     </div>
   </div>

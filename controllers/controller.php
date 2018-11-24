@@ -27,14 +27,14 @@ class Controller{
 
   //TODO: Modificar redirect, debe redirigir a el metodo de la controladra de la vista, ejemplo Default/Index
   public function redirect($url, $options = []){
-    //serialize options
+    /*
     if (! empty($options)) {
       $optionsSerialize = serialize($options);
       $this->session->redirectOptions = $optionsSerialize;
     }
     //redirect
 
-    header("location: ". FRONT_VIEW . $url);
+    header("location: ". FRONT_VIEW . $url);*/
   }
 
   public function render($path, $options = []) {

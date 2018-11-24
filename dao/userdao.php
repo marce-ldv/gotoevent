@@ -21,7 +21,7 @@ class UserDAO extends Singleton implements ICrud{
 		)";
 
 		$params['id_user'] = $user->getIdUser();
-		$params['role_user'] = 'user';/*$user->getRoleUser();*/
+		$params['role_user'] = 'user';
 		$params['username'] = $user->getUsername();
 		$params['pass'] = $user->getPass();
 		$params['email'] = $user->getEmail();
@@ -106,6 +106,18 @@ class UserDAO extends Singleton implements ICrud{
 			$p["profile_picture"]
 		);
 		return $u;
+	}
+
+	protected function mapear($value) {
+
+		$value = is_array($value) ? $value : [];
+
+		$resp = array_map(function($p){
+			return new M_Usuario($p['id'], $p['name'], $p['surname'], $p['birthdate'], $p['nationality'], $p['state'], $p['city'], $p['email'], $p['password'], $p['avatar'], $p['role']);
+		}, $value);
+
+		   return count($resp) > 1 ? $resp : $resp['0'];
+
 	}
 
 }//class end

@@ -78,8 +78,8 @@ class UserController extends Controller{
       ]);
       return;
       }
-$user = $this->userDAO->mapMethod($user);
-    if( ! password_verify($registerData["pass"],$user->getPass()) ){
+      $user = $this->userDAO->mapMethod($user);
+      if( ! password_verify($registerData["pass"],$user->getPass()) ){
       $this->redirect('/default/',[
         'alert' => "Password incorrecta"
       ]);
