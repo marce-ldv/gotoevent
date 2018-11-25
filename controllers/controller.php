@@ -54,7 +54,7 @@ class Controller{
 
     include VIEWS . '/header.php';
     require(VIEWS . "/$path" . ".php");
-    include VIEWS . '/footer.php';
+    //include VIEWS . '/footer.php';
   }
 
   public function isMethod ($method) {

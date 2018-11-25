@@ -30,7 +30,7 @@ class UserController extends Controller{
       "user" => $registerData["username"],
       "email" => $registerData["email"]
       ])) {
-       $this->redirect("/default/", ["alert" => "El usuario o email ya estan registrados"]);
+       //$this->redirect("/default/", ["alert" => "El usuario o email ya estan registrados"]);
        return;
      }
 
@@ -52,7 +52,7 @@ class UserController extends Controller{
       $registerData["profilePicture"]
     );
 
-    //  $fileController->upload($registerData["profilePicture"]);
+    //$fileController->upload($registerData["profilePicture"]);
     //print_r($user);
     try {
       $this->userDAO->create($user);
@@ -65,6 +65,27 @@ class UserController extends Controller{
     return false;
   }
 
+  public function add($_user) {
+
+    $D_user = new D_User();
+
+    $fileController = new FileController();
+
+    // Si se sube con exito la imagen...
+    //if($fileController->upload($_user->getAvatar(), 'avatar')) {
+
+        try {
+              $D_user->create($_user);
+              return true;
+        } catch(\PDOException $ex) {
+              throw $ex;
+        }
+
+    //} else {
+    //    return false;
+    //}
+
+  }
 
   //login
 

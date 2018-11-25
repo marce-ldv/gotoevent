@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href=" <?= FRONT_VIEW ?> "><img src="<?= URL_IMG ?>/logo.jpg" style="height: 60px;"> Sistema de Tickets</a>
+  <a class="navbar-brand" href=" <?= FRONT_VIEW ?> "><img src="<?= URL_IMG ?>/logo.jpg" style="height: 60px;"> GO TO EVENT</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -66,7 +66,7 @@ public function viewEdit ($id) {
 	]);
 
 	$searchedItem = $this->controllerDao->mapMethod($searchedItem);
-
+p
 	$this->render('viewArtist/updateArtist',[
 		'searchedItem' => $searchedItem
 	]);
